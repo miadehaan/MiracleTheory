@@ -1,0 +1,18 @@
+.landing {
+    height: 100vh;
+    color: #FFF;
+    background: linear-gradient(180deg, black, rgb(72, 0, 105), #7104a3, rgb(140, 49, 175) );
+}
+
+.welcomeBtn {
+    font-size: 40px;
+}
+
+.bouncy {
+    animation: bounce 3s infinite alternate;
+}
+
+@keyframes bounce {
+    to { transform: scale(1.2); }
+}
+

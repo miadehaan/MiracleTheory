@@ -1,0 +1,13 @@
+.aboutTitle {
+    text-shadow: 2px 2px 4px black;
+}
+
+.aboutParagraph {
+    padding: 30px 20px 0 20px;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px black;
+}
+
+.aboutImg {
+    border-radius: 60px;
+}

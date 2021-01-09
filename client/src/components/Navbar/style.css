@@ -1,3 +1,29 @@
 .navbar-brand {
+    width: 100%;
     color: white;
+}
+
+#navbarTitle {
+    font-size: 40px;
+    font-family: 'Major Mono Display', monospace;
+}
+
+@media screen and (max-width: 550px) {
+    #navbarTitle {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #navbarTitle {
+        font-size: 18px;
+    }
+}
+
+.navbar-nav {
+    font-size: 20px;
+}
+
+#navbarLogo {
+    width: 50px;
 }
