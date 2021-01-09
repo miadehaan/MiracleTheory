@@ -1,0 +1,38 @@
+{
+  "name": "miracletheory",
+  "version": "1.0.0",
+  "description": "Miracle Theory Youtube Channel Website",
+  "main": "server.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "concurrently": "^4.1.2",
+    "express": "^4.17.1",
+    "firebase": "^8.2.2",
+    "gh-pages": "^3.1.0",
+    "mongoose": "^5.11.4",
+    "mongodb": "^3.6.3",
+    "node-sass": "^5.0.0",
+    "nodemon": "^1.19.4",
+    "react-firebase-hooks": "^2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miadehaan/MiracleTheory.git"
+  },
+  "keywords": [
+    "react",
+    "firebase",
+    "youtube"
+  ],
+  "author": "Mia de Haan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/miadehaan/MiracleTheory/issues"
+  },
+  "homepage": "https://github.com/miadehaan/MiracleTheory#readme"
+}
