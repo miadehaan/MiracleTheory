@@ -6,7 +6,6 @@ import Youtube from "../components/Youtube";
 import Instagram from "../components/Instagram"
 import Footer from "../components/Footer";
 import UpArrow from "../assets/chevron-up-solid.svg"
-import Button from "react-bootstrap/Button"
 
 function Home() {
     return (
@@ -18,14 +17,31 @@ function Home() {
                     <div className="row">
                         <section className="col-12">
                             <About /> 
-                            <Youtube />
-                            <Instagram />
+                        </section>
+
+                        <section className="col-12">
+                            <h2 className="col-12" id="episodes"> Checkout the First Episode: </h2>
+                            <div className="row">
+                                <div className="col-md-6 col-12">
+                                    {/* Episode 1 */}
+                                    <Youtube videoId={'05Ry410o6oA'}  />
+                                </div>
+
+                                <div className="col-md-6 col-12">
+                                    {/* Episode 2 */}
+                                    <Youtube videoId={'0dz8dbq3iCU'} />
+                                </div>
+                            </div>
+                            
+                        </section>
+
+                        <section className="col-12">
+                            <Instagram instaUrl={'https://www.instagram.com/p/CHQU0_sD8nG/?utm_source=ig_web_copy_link'} />
                         </section>
                     </div>
 
-                    <Button id="backToTop" variant="light">
-                        <a class="nav-link" href="#top"> <img src={UpArrow} alt="FontAwesome Up Arrow"/> </a>
-                    </Button>
+                    {/* Back to Top Button */}
+                    <a id="backToTop" className="nav-link" href="#top"> <img src={UpArrow} alt="FontAwesome Up Arrow"/> </a>
                     
                 </div>
             </div>

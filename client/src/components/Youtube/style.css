@@ -1,19 +1,14 @@
-.youtube {
-    margin: 100px auto 100px auto;
-}
-
-.iframe-container {
+.youtubeContainer{
+    margin-bottom: 30px;
     position: relative;
     width: 100%;
     padding-bottom: 56.25%;
     height: 0;
 }
-
-.iframe-container iframe {
+.video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    box-shadow: 4px 4px 2px black;
 }
