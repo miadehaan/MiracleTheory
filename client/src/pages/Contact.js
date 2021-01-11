@@ -1,9 +1,52 @@
-import React from "react";
-import { Form } from "react-bootstrap";
+import React, { useState } from 'react'
+import { Axios, db } from '../firebase/firebaseConfig'
 import Navbar from "../components/Navbar";
+import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
 
 function Contact() {
+
+    const [formData, setFormData] = useState({})
+
+    const handleInputChange = e => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value,
+        })
+
+        // console.log(formData);
+    }
+    const handleSubmit = event => {
+        event.preventDefault();
+
+        // sendEmail();
+        setFormData({
+            name: '',
+            email: '',
+            message: '',
+        })
+
+        console.log(formData);
+    }
+    
+    const sendEmail = () => {
+        Axios.post(
+            'https://us-central1-your-app-name.cloudfunctions.net/submit',
+            formData
+        )
+            .then(res => {
+            db.collection('emails').add({
+                name: formData.name,
+                email: formData.email,
+                message: formData.message,
+                time: new Date(),
+            })
+            })
+            .catch(error => {
+            console.log(error)
+            })
+    }
+
     return (
         <div className="contactPg"
             style={{
@@ -23,36 +66,7 @@ function Contact() {
                     </p>
                     
                     <span className="col-2"/>
-                    <Form 
-                        className="col-8"
-                        style={{
-                            margin: '30px',
-                            fontSize: '30px'
-                        }}
-                    >
-                        <Form.Group controlId="exampleForm.ControlInput1">
-                            <Form.Label>Name</Form.Label>
-                            <Form.Control type="name" placeholder="" />
-                        </Form.Group>
-                        <Form.Group controlId="exampleForm.ControlInput2">
-                            <Form.Label>Email address</Form.Label>
-                            <Form.Control type="email" placeholder="name@example.com" />
-                        </Form.Group>
-                        {/* <Form.Group controlId="exampleForm.ControlSelect1">
-                            <Form.Label>Example select</Form.Label>
-                            <Form.Control as="select">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            </Form.Control>
-                        </Form.Group> */}
-                        <Form.Group controlId="exampleForm.ControlTextarea1">
-                            <Form.Label>Message</Form.Label>
-                            <Form.Control as="textarea" rows={4} />
-                        </Form.Group>
-                    </Form>
+                    <ContactForm handleInputChange={handleInputChange} handleSubmit={handleSubmit} />
                     <span className="col-2"/>
                 </div>
             </div>
