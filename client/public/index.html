@@ -41,11 +41,27 @@
 
   <!-- FIREBASE: -->
   <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="/__/firebase/8.2.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+
   <!-- TODO: Add SDKs for Firebase products that you want to use
       https://firebase.google.com/docs/web/setup#available-libraries -->
-  <script src="/__/firebase/8.2.2/firebase-analytics.js"></script>
-  <!-- Initialize Firebase -->
-  <script src="/__/firebase/init.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyCMivZPeb9Y7Kvc0_0icqB-OtzydAAq8S8",
+      authDomain: "miracletheorywebsite.firebaseapp.com",
+      projectId: "miracletheorywebsite",
+      storageBucket: "miracletheorywebsite.appspot.com",
+      messagingSenderId: "909592773227",
+      appId: "1:909592773227:web:917c9f25d3a07fffae272e",
+      measurementId: "G-HCJJC1G9MZ"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
 
 </html>
