@@ -34,3 +34,39 @@
     ".write": false
   }
 }
+[debug] [2021-01-12T17:41:55.360Z] ----------------------------------------------------------------------
+[debug] [2021-01-12T17:41:55.361Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-01-12T17:41:55.362Z] CLI Version:   9.1.2
+[debug] [2021-01-12T17:41:55.362Z] Platform:      win32
+[debug] [2021-01-12T17:41:55.362Z] Node Version:  v14.4.0
+[debug] [2021-01-12T17:41:55.363Z] Time:          Tue Jan 12 2021 09:41:55 GMT-0800 (Pacific Standard Time)
+[debug] [2021-01-12T17:41:55.363Z] ----------------------------------------------------------------------
+[debug] [2021-01-12T17:41:55.363Z] 
+[debug] [2021-01-12T17:41:55.368Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-12T17:41:55.369Z] > authorizing via signed-in user
+[debug] [2021-01-12T17:41:55.369Z] [iam] checking project miracletheorywebsite for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2021-01-12T17:41:55.372Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/miracletheorywebsite:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2021-01-12T17:41:55.542Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 12 Jan 2021 17:41:54 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=33","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-12T17:41:55.544Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/miracletheorywebsite  
+ 
+[debug] [2021-01-12T17:41:55.715Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 12 Jan 2021 17:41:54 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-12T17:41:55.717Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/miracletheorywebsite  
+ 
+[debug] [2021-01-12T17:41:55.882Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 12 Jan 2021 17:41:54 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'miracletheorywebsite'...
+[info] 
+[info] i  deploying database, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2021-01-12T17:41:55.895Z] >>> HTTP REQUEST GET https://firebasedatabase.googleapis.com/v1beta/projects/miracletheorywebsite/locations/-/instances/miracletheorywebsite-default-rtdb  
+ 
+[debug] [2021-01-12T17:41:56.228Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 12 Jan 2021 17:41:55 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-12T17:41:56.231Z] >>> HTTP REQUEST PUT https://miracletheorywebsite-default-rtdb.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+}
