@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Axios, db } from '../firebase/firebaseConfig'
+// import { Axios, db } from '../firebase/firebaseConfig'
 import Navbar from "../components/Navbar";
 import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
@@ -29,23 +29,23 @@ function Contact() {
         console.log(formData);
     }
     
-    const sendEmail = () => {
-        Axios.post(
-            'https://us-central1-your-app-name.cloudfunctions.net/submit',
-            formData
-        )
-            .then(res => {
-            db.collection('emails').add({
-                name: formData.name,
-                email: formData.email,
-                message: formData.message,
-                time: new Date(),
-            })
-            })
-            .catch(error => {
-            console.log(error)
-            })
-    }
+    // const sendEmail = () => {
+    //     Axios.post(
+    //         'https://us-central1-your-app-name.cloudfunctions.net/submit',
+    //         formData
+    //     )
+    //         .then(res => {
+    //         db.collection('emails').add({
+    //             name: formData.name,
+    //             email: formData.email,
+    //             message: formData.message,
+    //             time: new Date(),
+    //         })
+    //         })
+    //         .catch(error => {
+    //         console.log(error)
+    //         })
+    // }
 
     return (
         <div className="contactPg"

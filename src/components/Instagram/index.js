@@ -1,5 +1,5 @@
 import React from "react";
-import InstagramEmbed from 'react-instagram-embed';
+// import InstagramEmbed from 'react-instagram-embed';
 // import './style.css';
 
 function Instagram(props) {
@@ -10,7 +10,7 @@ function Instagram(props) {
         <div id="instagram">
             <h2> Latest Posts! </h2>
 
-            <InstagramEmbed
+            {/* <InstagramEmbed
                 url='https://www.instagram.com/p/CGXwxkUBKQB/'
                 clientAccessToken='446941160007073|64c8065839fdf9286f3aaabc84727896'
                 maxWidth={320}
@@ -22,7 +22,7 @@ function Instagram(props) {
                 onSuccess={() => {}}
                 onAfterRender={() => {}}
                 onFailure={() => {}}
-            />
+            /> */}
         </div>
     );
 }
