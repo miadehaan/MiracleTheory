@@ -6,8 +6,7 @@ function ContactForm(props) {
 
 
     return (
-
-        <Form className="col-8" style={{  margin: '30px', fontSize: '30px' }} >
+        <Form style={{  margin: '30px', fontSize: '30px' }} >
             <Form.Group controlId="exampleForm.ControlInput1">
                 <Form.Label>Name</Form.Label>
                 <Form.Control name="name" type="name" placeholder="name" onChange={props.handleInputChange} />

@@ -22,9 +22,9 @@ function Navbar() {
                     <Link to="/home" className="nav-item nav-link">Episodes</Link>
                     <Link to="/home" className="nav-item nav-link">Instagram</Link> */}
 
-                    <a className="nav-link" href="#about">About</a>
-                    <a className="nav-link" href="#episodes">Episodes</a>
-                    <a className="nav-link" href="#instagram">Instagram</a>
+                    <a className="nav-link" href="/home#about">About</a>
+                    <a className="nav-link" href="/home#episodes">Episodes</a>
+                    <a className="nav-link" href="/home#instagram">Instagram</a>
                     <Link to="/contact" className="nav-item nav-link">Contact</Link>
                 </nav>
             </nav>

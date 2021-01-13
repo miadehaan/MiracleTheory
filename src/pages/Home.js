@@ -20,7 +20,7 @@ function Home() {
                         </section>
 
                         <section className="col-12">
-                            <h2 className="col-12" id="episodes"> Checkout the First Episode: </h2>
+                            <h2 className="col-12" id="episodes"> Checkout My Latest Episodes: </h2>
                             <div className="row">
                                 <div className="col-md-6 col-12">
                                     {/* Episode 1 */}

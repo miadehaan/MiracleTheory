@@ -8,7 +8,10 @@ function About() {
             <div className="row">
                 <h2 className="col-12 aboutTitle"> About </h2>
 
-                <img className="aboutImg col-md-6 col-12" src={graphic} alt="brand graphic" />
+                <div className="col-md-6 col-12" >
+                    <img className="aboutImg col-12" src={graphic} alt="brand graphic" />
+                </div>
+                
                 <p className="aboutParagraph col-md-6 col-12">
                     Have you looked death in the face and survived!? Join me as I find people in 
                     my community who have encountered incredulous life altering experiences and 

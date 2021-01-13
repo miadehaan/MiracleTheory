@@ -65,9 +65,11 @@ function Contact() {
                         Miracle Theory is a show unlike any other—People coming together and connecting through unimaginable stories
                     </p>
                     
-                    <span className="col-2"/>
-                    <ContactForm handleInputChange={handleInputChange} handleSubmit={handleSubmit} />
-                    <span className="col-2"/>
+                    <span className="col-sm-2" />
+                    <div className="col-sm-8 col-12">
+                        <ContactForm handleInputChange={handleInputChange} handleSubmit={handleSubmit} />
+                    </div>
+                    <span className="col-sm-2" />
                 </div>
             </div>
 
