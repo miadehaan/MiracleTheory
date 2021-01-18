@@ -18,34 +18,42 @@ function Contact() {
             ...formData,
             [e.target.name]: e.target.value,
         })
-
-        // console.log(formData);
     }
+
+    // Once submitted, save user inputs to the DB
     const handleSubmit = event => {
         event.preventDefault();
+        console.log(formData);
 
+        // Send email to notify of new message from user
         // sendEmail();
+
+        // Save info to Firestore DB 
+        // Validation for all input fields
+        if (formData.name === "" || formData.email === "" || formData.message === "" ) {
+            alert("Please fill out all fields before submitting.");
+        }
+        else {
+            docRef.add({
+                name: formData.name,
+                email: formData.email,
+                message: formData.message,
+                timeStamp: new Date(),
+            }).then( () => {
+                console.log("Information saved to DB!");
+                alert("Your information has been submitted. Thank you!");
+            }).catch( (error) => {
+                console.log("Got an error: ", error)
+            });
+        }
+
+        // Reset state & input fields on form
         setFormData({
             name: '',
             email: '',
             message: '',
         });
 
-        console.log(formData.name);
-
-        // Save info to Firestore DB
-        docRef.add({
-            name: formData.name,
-            email: formData.email,
-            message: formData.message
-        }).then( () => {
-            console.log("Information saved to DB!");
-            alert("Your information has been submitted. Thank you!");
-        }).catch( (error) => {
-            console.log("Got an error: ", error)
-        });
-
-        console.log(formData);
     }
     
     // const sendEmail = () => {
@@ -86,7 +94,11 @@ function Contact() {
                     
                     <span className="col-sm-2" />
                     <div className="col-sm-8 col-12">
-                        <ContactForm handleInputChange={handleInputChange} handleSubmit={handleSubmit} />
+                        <ContactForm 
+                            handleInputChange={handleInputChange} 
+                            handleSubmit={handleSubmit} 
+                            input={formData}
+                        />
                     </div>
                     <span className="col-sm-2" />
                 </div>
