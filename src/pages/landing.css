@@ -1,18 +1,28 @@
 .landing {
-    height: 100vh;
+    min-height: 100vh;
     color: #FFF;
     background: linear-gradient(180deg, black, rgb(72, 0, 105), #7104a3, rgb(140, 49, 175) );
 }
 
+#title {
+    margin-top: 70px;
+    font-size: 7rem;
+    text-align: center;
+}
+
+#slogan {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.buttonContainer {
+    text-align: center;
+}
+
 .welcomeBtn {
     font-size: 40px;
-}
-
-.bouncy {
-    animation: bounce 3s infinite alternate;
-}
-
-@keyframes bounce {
-    to { transform: scale(1.2); }
+    border-radius: 12px;
+    margin-top: 20px;
 }
 
