@@ -3,10 +3,15 @@ import React, { useState } from 'react'
 import Navbar from "../components/Navbar";
 import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
+import firebase from "../firebase.js";
 
 function Contact() {
 
-    const [formData, setFormData] = useState({})
+    const [formData, setFormData] = useState({});
+
+    // Firestore
+    const docRef = firebase.firestore().collection("emails");
+    // console.log(docRef);
 
     const handleInputChange = e => {
         setFormData({
@@ -24,7 +29,21 @@ function Contact() {
             name: '',
             email: '',
             message: '',
-        })
+        });
+
+        console.log(formData.name);
+
+        // Save info to Firestore DB
+        docRef.add({
+            name: formData.name,
+            email: formData.email,
+            message: formData.message
+        }).then( () => {
+            console.log("Information saved to DB!");
+            alert("Your information has been submitted. Thank you!");
+        }).catch( (error) => {
+            console.log("Got an error: ", error)
+        });
 
         console.log(formData);
     }
