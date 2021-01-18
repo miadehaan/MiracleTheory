@@ -15,7 +15,7 @@ function Home() {
             <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
                 <div className="container mainContent">
                     <div className="row">
-                        <section className="col-12">
+                        <section className="col-12" style={{ marginBottom: '80px' }}>
                             <About /> 
                         </section>
 
@@ -36,7 +36,7 @@ function Home() {
                         </section>
 
                         <section className="col-12">
-                            <Instagram instaUrl={'https://www.instagram.com/p/CHQU0_sD8nG/?utm_source=ig_web_copy_link'} />
+                            {/* <Instagram instaUrl={'https://www.instagram.com/p/CHQU0_sD8nG/?utm_source=ig_web_copy_link'} /> */}
                         </section>
                     </div>
 

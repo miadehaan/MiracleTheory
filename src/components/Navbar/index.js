@@ -24,7 +24,7 @@ function Navbar() {
 
                     <a className="nav-link" href="/home#about">About</a>
                     <a className="nav-link" href="/home#episodes">Episodes</a>
-                    <a className="nav-link" href="/home#instagram">Instagram</a>
+                    {/* <a className="nav-link" href="/home#instagram">Instagram</a> */}
                     <Link to="/contact" className="nav-item nav-link">Contact</Link>
                 </nav>
             </nav>
