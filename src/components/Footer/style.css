@@ -3,6 +3,12 @@
     text-align: center;
     margin-top: 100px;
     margin-bottom: 60px;
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: 1px 1px 1px grey;
+}
+
+#MTemail {
+    font-size: 12px;
 }
 
 a:link {

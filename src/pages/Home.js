@@ -3,7 +3,7 @@ import "./home.css";
 import Navbar from "../components/Navbar";
 import About from "../components/About";
 import Youtube from "../components/Youtube";
-import Instagram from "../components/Instagram"
+// import Instagram from "../components/Instagram"
 import Footer from "../components/Footer";
 import UpArrow from "../assets/chevron-up-solid.svg"
 
@@ -12,15 +12,15 @@ function Home() {
         <div className="homePg">
             <Navbar />
 
-            <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+            <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" style={{ marginBottom: '200px' }}>
                 <div className="container mainContent">
                     <div className="row">
-                        <section className="col-12" style={{ marginBottom: '80px' }}>
+                        <section className="col-12" style={{ marginBottom: '200px' }}>
                             <About /> 
                         </section>
 
                         <section className="col-12">
-                            <h2 className="col-12" id="episodes"> Checkout My Latest Episodes: </h2>
+                            <h2 className="col-12" id="episodes"> Checkout My Latest Episodes </h2>
                             <div className="row">
                                 <div className="col-md-6 col-12">
                                     {/* Episode 1 */}
@@ -45,7 +45,7 @@ function Home() {
                     
                 </div>
             </div>
-            <Footer />
+            <Footer/>
         </div>
     );
 }

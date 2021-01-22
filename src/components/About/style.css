@@ -1,13 +1,64 @@
 .aboutTitle {
-    text-shadow: 2px 2px 4px black;
+    text-shadow: 2px 2px 2px black;
+    margin-top: 30px;
 }
 
-.aboutParagraph {
+.bulbImg {
+    margin: 20px auto 20px auto;
+    text-align: center;
+    width: 75%;
+    border-radius: 20px;
+}
+
+.showParagraph {
     padding: 30px 20px 0 20px;
     font-size: 20px;
-    text-shadow: 2px 2px 4px black;
+    /* text-shadow: 2px 2px 4px black; */
+    font-family: 'Quicksand', sans-serif;
 }
 
-.aboutImg {
-    border-radius: 60px;
+#section2 {
+    margin-top: 100px;
+}
+.headshot {
+    margin: 20px auto 20px auto;
+    text-align: center;
+    width: 75%;
+    border-radius: 20px;
+}
+
+.trinParagraph {
+    padding: 30px 20px 0 20px;
+    font-size: 20px;
+    /* text-shadow: 2px 2px 4px black; */
+    font-family: 'Quicksand', sans-serif;
+}
+
+#section3 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.funFacts {
+    list-style: none;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    padding-top: 30px;
+}
+
+#firstItem {
+    color: #eca0ff;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+#secondItem {
+    color: #aab2ff;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+#thirdItem {
+    color: #84ffc9;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
 }

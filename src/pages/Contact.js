@@ -88,20 +88,31 @@ function Contact() {
     return (
         <div className="contactPg"
             style={{
-                background: 'linear-gradient(180deg, black, rgb(72, 0, 105), #7104a3, rgb(140, 49, 175) )',
+                // background: 'linear-gradient(180deg, black, rgb(72, 0, 105), #7104a3, rgb(140, 49, 175) )',
+                background: 'linear-gradient(180deg, #eca0ff, #aab2ff,  #84ffc9 )',
                 height: '100%',
-                color: '#FFFFFF'
+                color: '#FFFFFF',
+                fontFamily: "'Major Mono Display', monospace "
             }}
         >
             <Navbar />
-            <div className="container">
-                <div className="row" style={{ marginTop: '30px', marginBottom: '30px'}}>
-                    <h2 className='col-12' style={{ textAlign: 'center' }} >   
-                        Have you survived a near death experience? Share with me. 
-                    </h2>
-                    <p className='col-12' style={{ textAlign: 'center', fontSize: '20px' }}> 
-                        Miracle Theory is a show unlike any other—People coming together and connecting through unimaginable stories
-                    </p>
+            <div className="container" style={{ marginBottom: '200px' }}>
+                <div className="row" style={{ marginTop: '100px',}}>
+                    <span className="col-2" />
+                    <div className='col-8'>
+                        <h3 style={{ textAlign: 'center', textShadow: '2px 2px 2px black', marginBottom: '0', paddingBottom: '10px' }} >   
+                            Have you survived a near death experience?
+                        </h3>
+                        <h3 style={{ textAlign: 'center', textShadow: '2px 2px 2px black', marginTop: '0', paddingTop: '0' }} >   
+                            Share with me. 
+                        </h3>
+                        <p style={{ textAlign: 'center', fontSize: '16px', textShadow: '1px 1px 1px black', fontFamily: " 'Quicksand', sans-serif "  }}> 
+                            <i>   
+                                Miracle Theory is a show unlike any other—People coming together and connecting through unimaginable stories
+                            </i>
+                        </p>
+                    </div>
+                    <span className="col-2" />
                     
                     <span className="col-sm-2" />
                     <div className="col-sm-8 col-12">

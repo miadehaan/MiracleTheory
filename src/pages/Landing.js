@@ -3,6 +3,7 @@ import "./landing.css";
 import { Link } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import { fadeInRight, fadeInLeft } from 'react-animations';
+import playNow from "../assets/playNow.png";
 
 function Landing() {
 
@@ -25,7 +26,7 @@ function Landing() {
                     
                     <FadeInLeft className="col-12" >
                         <Link to="/home" className="nav-item nav-link buttonContainer" >
-                            <button className="welcomeBtn" > Welcome </button>
+                            <img src={playNow} alt="" className="playBtn" />
                         </Link>
                     </FadeInLeft>
 

@@ -1,14 +1,14 @@
 import React from "react";
 import './style.css';
 import { Link } from 'react-router-dom';
-import brandImg from "../../assets/bulb.JPG";
+// import brandImg from "../../assets/bulb.JPG";
 
 function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark" id="top">
             <Link to="/" className="navbar-brand">
                 <h1 id="navbarTitle"> 
-                    <img id="navbarLogo" className="img-responsive" src={brandImg} alt="miracle theory logo" />
+                    {/* <img id="navbarLogo" className="img-responsive" src={brandImg} alt="miracle theory logo" /> */}
                     Miracle Theory 
                 </h1>
                 

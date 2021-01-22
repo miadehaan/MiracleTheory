@@ -6,6 +6,7 @@
 #navbarTitle {
     font-size: 40px;
     font-family: 'Major Mono Display', monospace;
+    text-shadow: 2px 2px 2px black;
 }
 
 @media screen and (max-width: 550px) {
@@ -21,8 +22,10 @@
 }
 
 .navbar-nav {
+    font-family: 'Major Mono Display', monospace;
     font-size: 22px;
     font-weight: bold;
+    /* text-shadow: 1px 1px 1px rgb(75, 75, 75); */
 }
 
 #navbarLogo {
