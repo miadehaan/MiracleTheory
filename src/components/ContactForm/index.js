@@ -6,7 +6,7 @@ function ContactForm(props) {
 
 
     return (
-        <Form style={{  margin: '30px', fontSize: '30px' }} >
+        <Form style={{  margin: '30px', fontSize: '30px', fontFamily: " 'Quicksand', sans-serif " }} >
             <Form.Group controlId="exampleForm.ControlInput1">
                 <Form.Label>Name</Form.Label>
                 <Form.Control name="name" type="name" value={props.input.name || ""} placeholder="name" onChange={props.handleInputChange} />

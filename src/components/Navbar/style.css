@@ -1,5 +1,5 @@
 .navbar-brand {
-    width: 100%;
+    width: 50%;
     color: white;
 }
 
@@ -17,7 +17,7 @@
 
 @media screen and (max-width: 550px) {
     #navbarTitle {
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 

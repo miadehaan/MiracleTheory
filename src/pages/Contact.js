@@ -13,17 +13,6 @@ function Contact() {
     // Firestore
     const docRef = firebase.firestore().collection("emails");
 
-    // Nodemailer Transporter (SMTP)
-    let transporter = nodemailer.createTransport({
-        host: 'smtp.gmail.com',
-        port: 465,
-        secure: true, //587 for false
-        auth: {
-            user: 'miracletheorycommunity@gmail.com',
-            pass: '**********'
-        }
-    });
-
     const handleInputChange = e => {
         setFormData({
             ...formData,
@@ -37,7 +26,7 @@ function Contact() {
         console.log(formData);
 
         // Send email to notify of new message
-        sendEmail();
+        // sendEmail();
 
         // Save info to Firestore DB 
         // Validation for all input fields
@@ -67,7 +56,7 @@ function Contact() {
 
     }
     
-    const sendEmail = () => {
+    // const sendEmail = () => {
     //     Axios.post(
     //         'https://us-central1-your-app-name.cloudfunctions.net/submit',
     //         formData
@@ -83,7 +72,7 @@ function Contact() {
     //         .catch(error => {
     //         console.log(error)
     //         })
-    }
+    // }
 
     return (
         <div className="contactPg"

@@ -1,19 +1,20 @@
 .aboutTitle {
     text-shadow: 2px 2px 2px black;
     margin-top: 30px;
+    text-align: center;
 }
 
 .bulbImg {
     margin: 20px auto 20px auto;
-    text-align: center;
+    /* padding-top: 10px; */
+    display: block;
     width: 75%;
     border-radius: 20px;
 }
 
 .showParagraph {
-    padding: 30px 20px 0 20px;
+    padding: 90px 20px 0 20px;
     font-size: 20px;
-    /* text-shadow: 2px 2px 4px black; */
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -21,8 +22,8 @@
     margin-top: 100px;
 }
 .headshot {
-    margin: 20px auto 20px auto;
-    text-align: center;
+    margin: 60px auto 20px auto;
+    display: block;
     width: 75%;
     border-radius: 20px;
 }
@@ -30,7 +31,6 @@
 .trinParagraph {
     padding: 30px 20px 0 20px;
     font-size: 20px;
-    /* text-shadow: 2px 2px 4px black; */
     font-family: 'Quicksand', sans-serif;
 }
 

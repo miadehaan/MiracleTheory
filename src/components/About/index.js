@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import graphic from "../../assets/bulb.JPG";
-import headshot from "../../assets/miracleTheoryGraphic.JPG"
+import headshot from "../../assets/headshot.jpeg";
 
 function About() {
     return (
@@ -9,11 +9,11 @@ function About() {
             <div className="row">
                 <h2 className="col-12 aboutTitle"> About The Show </h2>
 
-                <div className="col-md-6 col-12 justify-content-center" >
+                <div className="col-lg-6 col-12 justify-content-center" >
                     <img className="bulbImg" src={graphic} alt="brand graphic" />
                 </div>
                 
-                <p className="showParagraph col-md-6 col-12">
+                <p className="showParagraph col-lg-6 col-12">
                     Have you looked death in the face and survived!? Join me as I find people in 
                     my community who have encountered incredulous life altering experiences and 
                     walked away to tell their story! Miracle Theory is the show where life and 
@@ -28,11 +28,11 @@ function About() {
             <div className="row" id="section2">
                 <h2 className="col-12 aboutTitle"> About The Host </h2>
 
-                <div className="col-md-6 col-12 justify-content-center" >
+                <div className="col-lg-6 col-12 justify-content-center" >
                     <img className="headshot" src={headshot} alt="brand graphic" />
                 </div>
                 
-                <p className="trinParagraph col-md-6 col-12">
+                <p className="trinParagraph col-lg-6 col-12">
                     California baby turned Portland native. My dream is to be a physician assistant with a 
                     content creator twist. I love yoga, skiing, emergency medicine and leopard print. My favorite
                     food is avocado toast and I love learning about others. I love listening to podcasts and 
@@ -49,13 +49,13 @@ function About() {
                     <h2 className="aboutTitle"> Fun Facts About The Host </h2>
                 </div>
 
-                <span className="col-md-3" />
-                <ul className="funFacts col-md-6 col-12">
+                <span className="col-lg-3" />
+                <ul className="funFacts col-lg-6 col-12">
                     <li> <span id="firstItem"> 1. </span> I spent 5 years of my childhood in Singapore.  </li>
                     <li> <span id="secondItem"> 2. </span> I am certified in phlebotomy (blood draw).  </li>
                     <li> <span id="thirdItem"> 3. </span> I have a brindle pit-bull and her name is Mary Jane. </li>
                 </ul>
-                <span className="col-md-3" />
+                <span className="col-lg-3" />
 
                 
             </div>
