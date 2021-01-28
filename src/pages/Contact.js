@@ -78,7 +78,7 @@ function Contact() {
         <div className="contactPg"
             style={{
                 // background: 'linear-gradient(180deg, black, rgb(72, 0, 105), #7104a3, rgb(140, 49, 175) )',
-                background: 'linear-gradient(180deg, #eca0ff, #aab2ff,  #84ffc9 )',
+                background: 'linear-gradient(180deg, #eca0ff, #aab2ff,  #84ffc9, #eca0ff )',
                 height: '100%',
                 color: '#FFFFFF',
                 fontFamily: "'Major Mono Display', monospace "

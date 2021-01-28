@@ -1,10 +1,11 @@
 .footer {
-    color: white;
+    color: rgb(255, 255, 255);
+    /* text-shadow: 1px 1px 1px grey; */
+
     text-align: center;
     margin-top: 100px;
     margin-bottom: 60px;
     font-family: 'Quicksand', sans-serif;
-    text-shadow: 1px 1px 1px grey;
 }
 
 #MTemail {

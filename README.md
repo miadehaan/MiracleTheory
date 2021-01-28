@@ -5,7 +5,7 @@
 
 ## Description 
 
-This webpage was created for my client's Youtube Channel... 
+This webpage was created for my client's Youtube Channel to showcase episodes, provide information about the show, and exposes her brand past the scope of just Youtube. This site also serves as a communication tool for viewers and subscribers to directly contact her with their own stories to be featured on the show.
 This application utilizes ReactJS, Bootstrap, and Firebase. 
 
 ## Table of Contents
@@ -29,15 +29,16 @@ Github Repository: https://github.com/miadehaan/MiracleTheory
 
 - HTML
 - CSS
-- React Bootstrap Framework
+- Bootstrap Framework
 - React JS
 - Firebase
 
 ## Application
 
-![demo1](   .PNG)
-
-
+<img src="./src/assets/demo.PNG" style="width: 50%">
+<img src="./src/assets/demo2.PNG" style="width: 50%">
+<img src="./src/assets/demo3.PNG" style="width: 50%">
+<img src="./src/assets/demo4.PNG" style="width: 50%">
 
 
 ## Questions
