@@ -5,7 +5,9 @@ import About from "../components/About";
 import Youtube from "../components/Youtube";
 // import Instagram from "../components/Instagram"
 import Footer from "../components/Footer";
-import UpArrow from "../assets/chevron-up-solid.svg"
+import UpArrow from "../assets/chevron-up-solid.svg";
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Tooltip from "react-bootstrap/Tooltip";
 
 function Home() {
     return (
@@ -35,14 +37,24 @@ function Home() {
                             
                         </section>
 
-                        <section className="col-12">
+                        {/* <section className="col-12"> */}
                             {/* <Instagram instaUrl={'https://www.instagram.com/p/CHQU0_sD8nG/?utm_source=ig_web_copy_link'} /> */}
-                        </section>
+                        {/* </section> */}
                     </div>
 
                     {/* Back to Top Button */}
-                    <a id="backToTop" className="nav-link" href="#top"> <img src={UpArrow} alt="FontAwesome Up Arrow"/> </a>
-                    
+                    <OverlayTrigger
+                        key={'top'}
+                        placement={'top'}
+                        overlay={
+                            <Tooltip>
+                                Back To Top
+                            </Tooltip>
+                        }
+                    >
+                        <a id="backToTop" className="nav-link" href="#top"> <img src={UpArrow} alt="FontAwesome Up Arrow"/> </a>
+                    </OverlayTrigger>
+
                 </div>
             </div>
             <Footer/>
