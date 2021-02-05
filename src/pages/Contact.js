@@ -4,11 +4,15 @@ import Navbar from "../components/Navbar";
 import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
 import firebase from "../firebase.js";
-import nodemailer from "nodemailer";
+// import nodemailer from "nodemailer";
 
 function Contact() {
 
-    const [formData, setFormData] = useState({});
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        message: ""
+    });
 
     // Firestore
     const docRef = firebase.firestore().collection("emails");
@@ -34,17 +38,7 @@ function Contact() {
             alert("Please fill out all fields before submitting.");
         }
         else {
-            docRef.add({
-                name: formData.name,
-                email: formData.email,
-                message: formData.message,
-                timeStamp: new Date(),
-            }).then( () => {
-                console.log("Information saved to DB!");
-                alert("Your information has been submitted. Thank you!");
-            }).catch( (error) => {
-                console.log("Got an error: ", error)
-            });
+            sendToDB();
         }
 
         // Reset state & input fields on form
@@ -54,6 +48,20 @@ function Contact() {
             message: '',
         });
 
+    }
+
+    const sendToDB = () => {
+        docRef.add({
+            name: formData.name,
+            email: formData.email,
+            message: formData.message,
+            timeStamp: new Date(),
+        }).then( () => {
+            console.log("Information saved to DB!");
+            alert("Your information has been submitted. Thank you!");
+        }).catch( (error) => {
+            console.log("Got an error: ", error)
+        });
     }
     
     // const sendEmail = () => {
@@ -78,7 +86,7 @@ function Contact() {
         <div className="contactPg"
             style={{
                 // background: 'linear-gradient(180deg, black, rgb(72, 0, 105), #7104a3, rgb(140, 49, 175) )',
-                background: 'linear-gradient(180deg, #eca0ff, #aab2ff,  #84ffc9, #eca0ff )',
+                background: 'linear-gradient(180deg, #eca0ff, #aab2ff,  #84ffc9 )',
                 height: '100%',
                 color: '#FFFFFF',
                 fontFamily: "'Major Mono Display', monospace "

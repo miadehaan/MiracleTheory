@@ -12,12 +12,16 @@
     font-size: 12px;
 }
 
+#MTemail:hover {
+    color: black;
+}
+
 a:link {
     color: white;
 }
 
-a:hover {
-    color: black;
+.instagramLink:hover {
+    text-decoration: none;
 }
 
 .socials img {

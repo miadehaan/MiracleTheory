@@ -14,8 +14,8 @@ function Footer() {
                     </h5>
 
                     <section className="socials col-12">
-                        <a href="https://www.instagram.com/miracletheory/" > <img src={instaLogo} alt="instagram link" target="_blank" /> </a>
-                        <a href="https://www.youtube.com/channel/UCsQYveQtFLBe3mb4k2QqhXw" > <img src={youtubeLogo} alt="youtube link" target="_blank" /> </a>
+                        <a className="instagramLink" href="https://www.instagram.com/miracletheory/" > <img src={instaLogo} alt="instagram link" target="_blank" /> </a>
+                        <a className="youtubeLink" href="https://www.youtube.com/channel/UCsQYveQtFLBe3mb4k2QqhXw" > <img src={youtubeLogo} alt="youtube link" target="_blank" /> </a>
                     </section>
                     <hr />
                     <section className="col-12">&#169; Copyright 2021 Miracle Theory | Designed and Developed by <a href="mailto:mariannedehaan14@gmail.com">Mia de Haan</a> </section>
