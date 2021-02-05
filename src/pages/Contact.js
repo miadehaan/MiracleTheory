@@ -60,7 +60,8 @@ function Contact() {
             console.log("Information saved to DB!");
             alert("Your information has been submitted. Thank you!");
         }).catch( (error) => {
-            console.log("Got an error: ", error)
+            console.log("Got an error: ", error);
+            alert("There was an error submitting your information.");
         });
     }
     
