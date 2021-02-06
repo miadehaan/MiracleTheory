@@ -26,20 +26,20 @@ function Home() {
                             <div className="row">
                                 <div className="col-md-6 col-12">
                                     {/* Episode 1 */}
-                                    {/* <h3 className="epTitle"> Episode 1 </h3> */}
+                                    <h4 className="epTitle"> Episode 1: Second Chance </h4>
                                     <Youtube videoId={'05Ry410o6oA'}  />
                                 </div>
 
                                 <div className="col-md-6 col-12">
                                     {/* Episode 2 */}
-                                    {/* <h3 className="epTitle"> Episode 2 </h3> */}
+                                    <h4 className="epTitle"> Episode 2: Twister </h4>
                                     <Youtube videoId={'0dz8dbq3iCU'} />
                                 </div>
 
                                 <div className="col-md-3" />
                                 <div className="col-md-6 col-12">
                                     {/* Episode 3 */}
-                                    {/* <h3 className="epTitle"> Episode 3 </h3> */}
+                                    <h4 className="epTitle"> Episode 3: The Letter 5 </h4>
                                     <Youtube videoId={'FOZdWAbgdJU'} />
                                 </div>
                                 <div className="col-md-3" />
