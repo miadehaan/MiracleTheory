@@ -22,17 +22,28 @@ function Home() {
                         </section>
 
                         <section className="col-12">
-                            <h2 className="col-12" id="episodes"> Checkout My Latest Episodes </h2>
+                            <h2 className="col-12" id="episodes" style={{ marginBottom: '60px' }}> Checkout My Latest Episodes </h2>
                             <div className="row">
                                 <div className="col-md-6 col-12">
                                     {/* Episode 1 */}
+                                    {/* <h3 className="epTitle"> Episode 1 </h3> */}
                                     <Youtube videoId={'05Ry410o6oA'}  />
                                 </div>
 
                                 <div className="col-md-6 col-12">
                                     {/* Episode 2 */}
+                                    {/* <h3 className="epTitle"> Episode 2 </h3> */}
                                     <Youtube videoId={'0dz8dbq3iCU'} />
                                 </div>
+
+                                <div className="col-md-3" />
+                                <div className="col-md-6 col-12">
+                                    {/* Episode 3 */}
+                                    {/* <h3 className="epTitle"> Episode 3 </h3> */}
+                                    <Youtube videoId={'FOZdWAbgdJU'} />
+                                </div>
+                                <div className="col-md-3" />
+
                             </div>
                             
                         </section>

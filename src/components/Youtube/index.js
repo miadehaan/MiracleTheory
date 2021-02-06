@@ -15,12 +15,14 @@ function Youtube(props) {
 
     function videoOnReady(event) {
         // access to player in all event handlers via event.target
-        event.target.pauseVideo();
+        // event.target.pauseVideo();
+
+        // console.log(event.target);
+        event.target.stopVideo();
     }
     
     return (
         <div className="youtubeContainer">
-            {/* <iframe title="miracle theory episode 1" width="560" height="315" src="https://www.youtube.com/embed/05Ry410o6oA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
             <YouTube className="video" videoId={props.videoId} opts={opts} onReady={videoOnReady} />
         </div>
     );
