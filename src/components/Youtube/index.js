@@ -9,7 +9,7 @@ function Youtube(props) {
         width: '640',
         playerVars: {
             // https://developers.google.com/youtube/player_parameters
-            autoplay: 1,
+            autoplay: 0,
         },
     };
 
@@ -17,7 +17,7 @@ function Youtube(props) {
         // access to player in all event handlers via event.target
         // event.target.pauseVideo();
 
-        // console.log(event.target);
+        console.log(event.target);
         event.target.stopVideo();
     }
     
