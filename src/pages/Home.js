@@ -36,13 +36,17 @@ function Home() {
                                     <Youtube videoId={'0dz8dbq3iCU'} />
                                 </div>
 
-                                <div className="col-md-3" />
                                 <div className="col-md-6 col-12">
                                     {/* Episode 3 */}
                                     <h4 className="epTitle"> Episode 3: The Letter 5 </h4>
                                     <Youtube videoId={'FOZdWAbgdJU'} />
                                 </div>
-                                <div className="col-md-3" />
+
+                                <div className="col-md-6 col-12">
+                                    {/* Episode 4 */}
+                                    <h4 className="epTitle"> Episode 4: Buoyancy </h4>
+                                    <Youtube videoId={'N2i8zdP2FdI'} />
+                                </div>
 
                             </div>
                             
