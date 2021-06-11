@@ -48,6 +48,15 @@ function Home() {
                                     <Youtube videoId={'N2i8zdP2FdI'} />
                                 </div>
 
+                                <div className="col-md-3"></div>
+                                <div className="col-md-6 col-12">
+                                    {/* Episode 5 */}
+                                    {/* <h4 className="epTitle"> Episode 5: If My Backpack Could Speak </h4> */}
+                                    <h3  className="epTitle" style={{textAlign: "center", marginTop: "60px"}}>EPISODE 5 COMING SOON... 6/11</h3>
+                                    {/* <Youtube videoId={''} /> */}
+                                </div>
+                                <div className="col-md-3"></div>
+
                             </div>
                             
                         </section>
